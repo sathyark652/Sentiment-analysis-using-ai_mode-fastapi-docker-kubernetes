@@ -1,9 +1,13 @@
 # Sentiment Analysis FastAPI App
-This project implements a Sentiment Analysis API using FastAPI and deploys it using Kubernetes. It consists of a FastAPI web application for sentiment analysis, a MySQL database to store predictions, and it can be easily deployed using Docker Compose and Kubernetes.
+This project implements a Sentiment Analysis API using FastAPI and deploys it using Docker, Kubernetes. 
+It consists of a FastAPI web application for sentiment analysis, a MySQL database to store predictions, and it can be easily deployed using Docker Compose and Kubernetes.
+
 
 ![image](https://github.com/sathyark652/Sentiment-analysis-using-ai_mode-fastapi-docker-kubernetes/assets/117423140/1f629774-d5a3-479c-88cb-231fd6174529)
 
 ## Tools Used
+
+Sklearn,Tensorflow: Its used for training the model, predict the output and stored it in .joblib file.
 
 FastAPI: FastAPI is a modern, fast (high-performance), web framework for building APIs with Python 3.7+ based on standard Python type hints.
 
@@ -117,13 +121,15 @@ check the pods and its service
 
 ![image](https://github.com/sathyark652/Sentiment-analysis-using-ai_mode-fastapi-docker-kubernetes/assets/117423140/7a17d0ed-5526-494e-b0f0-117e0555dd16)
 
-Access the deployed application after deploying using http://<EXTERNAL_IP>:PORT(ex: http://127.0.0.1:30335/docs#/default/predict_predict_post)
+Access the deployed application using http://<EXTERNAL_IP>:PORT
+(ex: http://127.0.0.1:30335/docs#/default/predict_predict_post)
+
 
 ![image](https://github.com/sathyark652/Sentiment-analysis-using-ai_mode-fastapi-docker-kubernetes/assets/117423140/500d2f94-478c-4c7e-9589-322130522d5e)
 
-after deployment ,check whether its working right or not.
+* After deployment ,check whether its working right or not.
 
-delete the pods and  stop the minikube.
+* Delete the pods and  stop the minikube.
 
 For more detailed information, refer to the project's documentation and code files.
 
