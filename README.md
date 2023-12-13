@@ -13,7 +13,7 @@ Kubernetes: Kubernetes is used for orchestrating and deploying the application i
 HTML,CSS,Javascript: It is used to develop simple user interface.
 
 ## Project Structure
-
+```
 D:.
 │   .env                         # Environment variables file
 │   docker-compose.yml            # Docker Compose configuration
@@ -44,7 +44,7 @@ D:.
     │
     ├───templates                # Directory for HTML templates
     │       base.html            # Base HTML template
-
+```
 ## Prerequisites
 Docker Installed: Ensure Docker is installed on your system. Get Docker
 Kubernetes Installed: For Kubernetes deployment, install Kubernetes, or use Minikube for local testing. Install Kubernetes with Minikube
