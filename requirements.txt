@@ -1,0 +1,8 @@
+scikit-learn==1.0.2
+joblib
+pandas 
+fastapi
+uvicorn
+sqlalchemy
+mysql-connector-python
+alembic
