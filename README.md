@@ -4,6 +4,7 @@ This project implements a Sentiment Analysis API using FastAPI and deploys it us
 ![image](https://github.com/sathyark652/Sentiment-analysis-using-ai_mode-fastapi-docker-kubernetes/assets/117423140/1f629774-d5a3-479c-88cb-231fd6174529)
 
 ## Tools Used
+
 FastAPI: FastAPI is a modern, fast (high-performance), web framework for building APIs with Python 3.7+ based on standard Python type hints.
 
 MySQL: MySQL is used as the database to store sentiment predictions.
@@ -15,13 +16,17 @@ Kubernetes: Kubernetes is used for orchestrating and deploying the application i
 HTML,CSS,Javascript: It is used to develop simple user interface.
 
 ## Workflow
+
 fastapi authentication
+
 ![image](https://github.com/sathyark652/Sentiment-analysis-using-ai_mode-fastapi-docker-kubernetes/assets/117423140/88a2cd1a-a8ab-4ecc-8e3b-ef7efb36eb96)
 
 so authentication is successful and fastapi is working
+
 ![image](https://github.com/sathyark652/Sentiment-analysis-using-ai_mode-fastapi-docker-kubernetes/assets/117423140/942e3bce-9822-4162-8564-229ac0e9195f)
 
 fastapi apipoints: (access at http://127.0.0.1:8000/docs)
+
 ![image](https://github.com/sathyark652/Sentiment-analysis-using-ai_mode-fastapi-docker-kubernetes/assets/117423140/f97530d6-fdf2-4ccd-995c-7d0e5a6602c7)
 
 frontend for user input and prediction of output:
@@ -62,6 +67,7 @@ D:.
     ├───templates                # Directory for HTML templates
     │       base.html            # Base HTML template
 ```
+
 ## Prerequisites
 Docker Installed: Ensure Docker is installed on your system. Get Docker
 Kubernetes Installed: For Kubernetes deployment, install Kubernetes, or use Minikube for local testing. Install Kubernetes with Minikube
@@ -86,10 +92,12 @@ Create a .env file and set the necessary environment variables. Refer to the pro
 docker-compose build
 docker-compose up
 ```
+
 ![image](https://github.com/sathyark652/Sentiment-analysis-using-ai_mode-fastapi-docker-kubernetes/assets/117423140/3cb66c18-437f-4333-8877-40cca7b01bab)
 
 
 5.Access the application at http://localhost:8000.
+
 
 ![image](https://github.com/sathyark652/Sentiment-analysis-using-ai_mode-fastapi-docker-kubernetes/assets/117423140/44b8733c-b3c4-48b5-ab9a-b43698b85d8d)
 
