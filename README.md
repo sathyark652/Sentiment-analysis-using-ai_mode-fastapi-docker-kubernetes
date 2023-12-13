@@ -1,6 +1,8 @@
 # Sentiment Analysis FastAPI App
 This project implements a Sentiment Analysis API using FastAPI and deploys it using Kubernetes. It consists of a FastAPI web application for sentiment analysis, a MySQL database to store predictions, and it can be easily deployed using Docker Compose and Kubernetes.
 
+![image](https://github.com/sathyark652/Sentiment-analysis-using-ai_mode-fastapi-docker-kubernetes/assets/117423140/1f629774-d5a3-479c-88cb-231fd6174529)
+
 ## Tools Used
 FastAPI: FastAPI is a modern, fast (high-performance), web framework for building APIs with Python 3.7+ based on standard Python type hints.
 
@@ -11,6 +13,21 @@ Docker Compose: Docker Compose is used for defining and running multi-container 
 Kubernetes: Kubernetes is used for orchestrating and deploying the application in a containerized environment.
 
 HTML,CSS,Javascript: It is used to develop simple user interface.
+
+## Workflow
+fastapi authentication
+![image](https://github.com/sathyark652/Sentiment-analysis-using-ai_mode-fastapi-docker-kubernetes/assets/117423140/88a2cd1a-a8ab-4ecc-8e3b-ef7efb36eb96)
+
+so authentication is successful and fastapi is working
+![image](https://github.com/sathyark652/Sentiment-analysis-using-ai_mode-fastapi-docker-kubernetes/assets/117423140/942e3bce-9822-4162-8564-229ac0e9195f)
+
+fastapi apipoints: (access at http://127.0.0.1:8000/docs)
+![image](https://github.com/sathyark652/Sentiment-analysis-using-ai_mode-fastapi-docker-kubernetes/assets/117423140/f97530d6-fdf2-4ccd-995c-7d0e5a6602c7)
+
+frontend for user input and prediction of output:
+
+![image](https://github.com/sathyark652/Sentiment-analysis-using-ai_mode-fastapi-docker-kubernetes/assets/117423140/d1467c9d-4b8a-4ab8-a42b-fc8a19d08a87)
+
 
 ## Project Structure
 ```
@@ -69,14 +86,13 @@ Create a .env file and set the necessary environment variables. Refer to the pro
 docker-compose build
 docker-compose up
 ```
-![Untitled](https://prod-files-secure.s3.us-west-2.amazonaws.com/e5ce1603-e7d2-4918-a5e4-3cf06fc57018/1de54c13-4f1f-40a3-9aeb-be6dd6b59c54/Untitled.png)
+![image](https://github.com/sathyark652/Sentiment-analysis-using-ai_mode-fastapi-docker-kubernetes/assets/117423140/3cb66c18-437f-4333-8877-40cca7b01bab)
 
-![Untitled](https://prod-files-secure.s3.us-west-2.amazonaws.com/e5ce1603-e7d2-4918-a5e4-3cf06fc57018/1de54c13-4f1f-40a3-9aeb-be6dd6b59c54/Untitled.png)
 
 5.Access the application at http://localhost:8000.
 
-![Untitled](https://prod-files-secure.s3.us-west-2.amazonaws.com/e5ce1603-e7d2-4918-a5e4-3cf06fc57018/576f4d18-d196-4772-bd9f-4ffa6878d944/Untitled.png)
-![Untitled](https://prod-files-secure.s3.us-west-2.amazonaws.com/e5ce1603-e7d2-4918-a5e4-3cf06fc57018/6d07d08b-6a58-49c4-9bd0-476659d1450d/Untitled.png)
+![image](https://github.com/sathyark652/Sentiment-analysis-using-ai_mode-fastapi-docker-kubernetes/assets/117423140/44b8733c-b3c4-48b5-ab9a-b43698b85d8d)
+
 
 ## Kubernetes Deployment
 Deploy the application on Kubernetes:
@@ -90,11 +106,12 @@ kubectl apply -f kubernetes-mysql.yml
 kubectl apply -f kubernetes-mysql-pvc.yml
 ```
 check the pods and its service 
-![Untitled](https://prod-files-secure.s3.us-west-2.amazonaws.com/e5ce1603-e7d2-4918-a5e4-3cf06fc57018/32c1d5fa-2e67-445d-bc27-eaeb7f4a80f9/Untitled.png)
 
+![image](https://github.com/sathyark652/Sentiment-analysis-using-ai_mode-fastapi-docker-kubernetes/assets/117423140/7a17d0ed-5526-494e-b0f0-117e0555dd16)
 
-Access the deployed application after deploying using http://<EXTERNAL_IP>:PORT
-![Untitled](https://prod-files-secure.s3.us-west-2.amazonaws.com/e5ce1603-e7d2-4918-a5e4-3cf06fc57018/1a35ce14-5319-4870-abab-b57188fe796e/Untitled.png)
+Access the deployed application after deploying using http://<EXTERNAL_IP>:PORT(ex: http://127.0.0.1:30335/docs#/default/predict_predict_post)
+
+![image](https://github.com/sathyark652/Sentiment-analysis-using-ai_mode-fastapi-docker-kubernetes/assets/117423140/500d2f94-478c-4c7e-9589-322130522d5e)
 
 after deployment ,check whether its working right or not.
 
